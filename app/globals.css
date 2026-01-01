@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f9f4;
+  color: #0f281e;
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, #c5a059 0%, #e5c579 50%, #c5a059 100%);
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #c5a059 0%, #b08d45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .highlight-underline {
+    text-decoration: underline;
+    text-decoration-color: #c5a059;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+  }
+
+  .aureus-bg {
+    background-color: #f4f9f4;
+  }
+
+  .aureus-gold {
+    color: #c5a059;
+  }
+
+  .aureus-gold-bg {
+    background-color: #c5a059;
+  }
+
+  .aureus-dark {
+    color: #0f281e;
+  }
+
+  .aureus-dark-bg {
+    background-color: #0f281e;
+  }
+
+  .aureus-muted {
+    color: #6b7c75;
+  }
 }

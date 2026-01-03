@@ -53,3 +53,14 @@ body {
     color: #6b7c75;
   }
 }
+
+
+::selection {
+  background-color: #0f6d1e;
+  color: #ffffff; 
+}
+
+::-moz-selection {
+  background-color: #0f6d1e;
+  color: #ffffff;
+}

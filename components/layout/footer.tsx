@@ -8,14 +8,14 @@ export default function Footer() {
           <h3 className="font-serif font-bold text-xl mb-4 aureus-gold">
             AUREUS LOGIC
           </h3>
-          <p className="text-gray-400">
+          <p className="text-gray-800">
             Moving traders from reaction to control through non linear decision
             governance.
           </p>
         </div>
         <div>
           <h4 className="font-bold mb-4 aureus-gold">Product</h4>
-          <ul className="space-y-2 text-gray-400">
+          <ul className="space-y-2 text-gray-800">
             <li>
               <a href="#" className="hover:text-black transition-colors">
                 Aureus Logic Framework
@@ -35,19 +35,19 @@ export default function Footer() {
         </div>
         <div>
           <h4 className="font-bold mb-4 aureus-gold">Legal</h4>
-          <ul className="space-y-2 text-gray-400">
+          <ul className="space-y-2 text-gray-800">
             <li>
-              <a href="#" className="hover:text-black transition-colors">
+              <a href="/privacy-policy" className="hover:text-black transition-colors">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-black transition-colors">
+              <a href="/terms-of-service" className="hover:text-black transition-colors">
                 Terms of Service
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-black transition-colors">
+              <a href="/risk-disclosure" className="hover:text-black transition-colors">
                 Risk Disclosure
               </a>
             </li>

@@ -38,7 +38,7 @@ export default function Navigation() {
           onClick={() => scrollToSection('author')}
           className="hover:text-aureus-gold transition-colors"
         >
-          Author
+          Inventor
         </button>
         <button
           onClick={() => scrollToSection('access')}

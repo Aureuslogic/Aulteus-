@@ -1,3 +1,6 @@
+import Image from "next/image";
+import styles from "./styles.module.css"
+
 export default function AuthorSection() {
   return (
     <section id="author" className="py-20 bg-white">
@@ -6,12 +9,12 @@ export default function AuthorSection() {
           <div className="w-48 h-48 bg-gray-200 rounded-full mb-6 overflow-hidden border-4 border-aureus-gold shadow-xl">
             {/* Placeholder for Sam's Image */}
             <div className="w-full h-full aureus-dark-bg flex items-center justify-center text-white">
-              <span className="text-4xl font-serif">SO</span>
+             <Image src="/assets/author.jpg" alt="Sam Onigbanjo" width={500} height={500}  className={styles.imageStyles}/>
             </div>
           </div>
           <h3 className="font-serif font-bold text-2xl">Sam Onigbanjo</h3>
           <p className="text-xs tracking-widest uppercase text-aureus-gold mt-2 font-bold">
-            Author of Aureus Logic
+            Inventor of Aureus Logic
           </p>
           <p className="text-xs text-gray-500 mt-1">
             Creator of &quot;The Banker&apos;s Code&quot;
@@ -20,7 +23,7 @@ export default function AuthorSection() {
 
         <div className="md:col-span-8">
           <h2 className="text-3xl font-serif font-bold mb-6">
-            From the Author
+            From the Inventor
           </h2>
           <div className="prose prose-lg text-aureus-dark">
             <p className="italic mb-6">

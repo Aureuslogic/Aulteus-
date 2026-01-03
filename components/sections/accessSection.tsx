@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 
 interface PricingOption {
   featured?: boolean;
@@ -8,6 +9,7 @@ interface PricingOption {
   description: string;
   features: string[];
   buttonText: string;
+  stripeLink: string;
 }
 
 const pricingOptions: PricingOption[] = [
@@ -22,6 +24,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding',
     ],
     buttonText: 'Select Access',
+    stripeLink: 'https://buy.stripe.com/eVq14mbvYcvwarO2WN7ok1h',
   },
   {
     featured: true,
@@ -37,6 +40,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding and framework orientation',
     ],
     buttonText: 'Join The 1%',
+    stripeLink: 'https://buy.stripe.com/3cI14m7fI3Z01Vi2WN7ok1j',
   },
 ];
 
@@ -98,15 +102,18 @@ export default function AccessSection() {
               ))}
             </ul>
 
-            <button
-              className={`w-full py-3 font-bold uppercase tracking-widest rounded transition-all ${
+            <Link
+              href={option.stripeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`w-full py-3 font-bold uppercase tracking-widest rounded transition-all text-center block ${
                 option.featured
                   ? 'gold-gradient text-white hover:shadow-lg hover:opacity-90'
-                  : 'border-2 border-aureus-gold aureus-gold hover:aureus-gold hover:text-black'
+                  : 'border-2 border-aureus-gold aureus-gold hover:aureus-gold-bg hover:text-black'
               }`}
             >
               {option.buttonText}
-            </button>
+            </Link>
           </div>
         ))}
       </div>

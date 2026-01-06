@@ -169,8 +169,8 @@ export default function FAQSection() {
             Have more questions?
           </p>
           <p className="text-sm text-aureus-dark">
-           contact us at{' '} <a href="mailto:samonigbanjo@gmail.com" className="text-aureus-gold hover:text-aureus-goldHover underline">
-           samonigbanjo@gmail.com
+           contact us at{' '} <a href="mailto:Hello@aureuslogic.com" className="text-aureus-gold hover:text-aureus-goldHover underline">
+           Hello@aureuslogic.com 
           </a>
           </p>
         </div>

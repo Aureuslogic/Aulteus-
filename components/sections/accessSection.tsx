@@ -24,7 +24,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding',
     ],
     buttonText: 'Select Access',
-    stripeLink: 'https://buy.stripe.com/eVq14mbvYcvwarO2WN7ok1h',
+    stripeLink: 'https://buy.stripe.com/3cI6oG1Vo1QSbvS0OF7ok1i',
   },
   {
     featured: true,

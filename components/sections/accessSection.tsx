@@ -40,7 +40,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding and framework orientation',
     ],
     buttonText: 'Join The 1%',
-    stripeLink: 'https://buy.stripe.com/3cI14m7fI3Z01Vi2WN7ok1j',
+    stripeLink: 'https://buy.stripe.com/3cI6oG1Vo1QSbvS0OF7ok1i',
   },
 ];
 

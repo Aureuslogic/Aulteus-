@@ -17,7 +17,7 @@ export default function Footer() {
           <h4 className="font-bold mb-4 aureus-gold">Product</h4>
           <ul className="space-y-2 text-gray-800">
             <li>
-              <a href="#" className="hover:text-black transition-colors">
+              <a href="https://aureuslogic.com/#" className="hover:text-black transition-colors">
                 Aureus Logic Framework
               </a>
             </li>

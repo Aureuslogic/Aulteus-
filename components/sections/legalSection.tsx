@@ -11,7 +11,7 @@ export default function LegalSection({
 }: LegalSectionProps) {
   return (
     <section className={`mb-8 ${className}`}>
-      <h2 className="text-2xl font-serif font-bold text-aureus-dark mb-4 border-b-2 border-aureus-gold pb-2">
+      <h2 className="text-2xl font-serif font-bold text-aureus-dark mb-4 border-aureus-gold pb-2">
         {title}
       </h2>
       <div className="text-aureus-dark leading-relaxed space-y-4">

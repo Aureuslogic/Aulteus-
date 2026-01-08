@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
       lastUpdated="January 2025"
     >
       <div className="mb-8">
-        <h2 className="text-3xl font-serif font-bold text-aureus-dark mb-4">
+        <h2 className="text-3xl font-serif font-bold text-aureus-dark ">
           Aureus Logic
         </h2>
       </div>

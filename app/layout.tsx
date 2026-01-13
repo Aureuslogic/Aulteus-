@@ -37,11 +37,9 @@ export default function RootLayout({
           src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
           strategy="afterInteractive"
         />
-
         <Navigation />
 
         <main>{children}</main>
-
         <Footer />
 
         {/* Vapi Widget */}
@@ -49,7 +47,9 @@ export default function RootLayout({
           public-key="6e2fdc9a-d3aa-4ffa-93d2-354175b9e9c2"
           assistant-id="b97f25cc-f9bc-4f0f-a4e6-550c5b125d5d"
           mode="voice"
+          main-label="Talk to Aureus Agent"
           theme="light"
+           empty-voice-message="Click to start a voice conversation"
         ></vapi-widget>
       </body>
     </html>

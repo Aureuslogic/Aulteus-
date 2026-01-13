@@ -48,7 +48,7 @@ export default function RootLayout({
         <vapi-widget
           public-key="6e2fdc9a-d3aa-4ffa-93d2-354175b9e9c2"
           assistant-id="b97f25cc-f9bc-4f0f-a4e6-550c5b125d5d"
-          mode="chat"
+          mode="voice"
           theme="light"
         ></vapi-widget>
       </body>

@@ -49,6 +49,7 @@ export default function RootLayout({
           mode="voice"
           main-label="Talk to Aureus Agent"
           theme="light"
+          accent-color="#c5a059"
            empty-voice-message="Click to start a voice conversation"
         ></vapi-widget>
       </body>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,8 +17,8 @@ export default function Navigation() {
 
   return (
     <nav className="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
-      <div className="text-2xl font-serif font-bold tracking-tight text-aureus-dark">
-        AUREUS <span className="text-aureus-gold">LOGIC</span>
+      <div>
+        <Image src='/assets/logo.png' width={200} height={100} alt='logo' />
       </div>
 
       {/* Desktop Menu */}

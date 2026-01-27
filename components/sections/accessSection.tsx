@@ -24,7 +24,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding',
     ],
     buttonText: 'Select Access',
-    stripeLink: 'https://buy.stripe.com/3cI6oG1Vo1QSbvS0OF7ok1i',
+    stripeLink: 'https://aureus-logic.vercel.app/signup?plan=standard',
   },
   {
     featured: true,
@@ -40,7 +40,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding and framework orientation',
     ],
     buttonText: 'Join The 1%',
-    stripeLink: 'https://buy.stripe.com/3cI6oG1Vo1QSbvS0OF7ok1i',
+    stripeLink: 'https://aureus-logic.vercel.app/app?plan=mentorship',
   },
 ];
 

@@ -9,7 +9,7 @@ interface PricingOption {
   description: string;
   features: string[];
   buttonText: string;
-  stripeLink: string;
+  buttonLink: string;
 }
 
 const pricingOptions: PricingOption[] = [
@@ -24,7 +24,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding',
     ],
     buttonText: 'Select Access',
-    stripeLink: 'https://aureus-logic.vercel.app/signup?plan=standard',
+    buttonLink: "https://aureus-logic.vercel.app/app?plan=standard",
   },
   {
     featured: true,
@@ -40,7 +40,7 @@ const pricingOptions: PricingOption[] = [
       'One to one onboarding and framework orientation',
     ],
     buttonText: 'Join The 1%',
-    stripeLink: 'https://aureus-logic.vercel.app/app?plan=mentorship',
+    buttonLink: 'https://aureus-logic.vercel.app/app?plan=mentorship',
   },
 ];
 
@@ -103,9 +103,8 @@ export default function AccessSection() {
             </ul>
 
             <Link
-              href={option.stripeLink}
+              href={option.buttonLink}
               target="_blank"
-              rel="noopener noreferrer"
               className={`w-full py-3 font-bold uppercase tracking-widest rounded transition-all text-center block ${
                 option.featured
                   ? 'gold-gradient text-white hover:shadow-lg hover:opacity-90'

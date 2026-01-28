@@ -14,6 +14,7 @@ export default function Home() {
       <Breadcrumbs />
       <HeroSection />
       <PhilosophySection />
+      <AccessSection />
       <HiddenTruthSection />
       <IntroductionSection />
       <LogicEngineSection />

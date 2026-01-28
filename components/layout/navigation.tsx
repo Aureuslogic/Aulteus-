@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
+import '../../app/globals.css'
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,12 +42,12 @@ export default function Navigation() {
         >
           Inventor
         </button>
-        <button
-          onClick={() => scrollToSection('access')}
-          className="text-aureus-gold font-bold"
+        <a
+          href="https://aureus-logic.vercel.app/login" target='_blank'
+          className="text-white font-bold bg-black cursor-pointer px-4 py-2 rounded transition-colors"
         >
-          Get Access
-        </button>
+          Login
+        </a>
       </div>
 
       {/* Mobile Menu Icon */}
@@ -80,12 +81,12 @@ export default function Navigation() {
             >
               Author
             </button>
-            <button
-              onClick={() => scrollToSection('access')}
-              className="block py-2 text-aureus-gold font-bold"
-            >
-              Get Access
-            </button>
+               <a
+          href="https://aureus-logic.vercel.app/login" target='_blank'
+          className="text-white font-bold bg-black cursor-pointer px-4 py-2 rounded transition-colors"
+        >
+          Login
+        </a>
           </div>
         </div>
       )}

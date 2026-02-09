@@ -50,12 +50,12 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <button
-        onClick={scrollToAccess}
+      <a
+        href='/online-launch'
         className="inline-block gold-gradient text-white px-8 py-4 rounded font-medium tracking-wide shadow-md hover:shadow-xl hover:scale-105 transition-all transform duration-300 uppercase text-sm"
       >
-        Access The Banker&apos;s Code
-      </button>
+       Online Launch
+      </a>
     </header>
   );
 }

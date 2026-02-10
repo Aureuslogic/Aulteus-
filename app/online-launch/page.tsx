@@ -116,13 +116,6 @@ export default function AureusLogicLaunch() {
           </a>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="border-t border-zinc-200 mt-24">
-        <div className="max-w-4xl mx-auto px-6 py-8">
-          <p className="text-zinc-400 text-sm">© 2026 Aureus Logic. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -12,6 +12,14 @@ export default function HeroSection() {
 
   return (
     <header className="relative pt-12 pb-20 px-6 md:px-12 max-w-5xl mx-auto text-center">
+       <a
+        href='/online-launch'
+        className="inline-block gold-gradient text-white px-8 py-4 rounded font-medium tracking-wide shadow-md hover:shadow-xl hover:scale-105 transition-all transform duration-300 uppercase text-xl"
+      >
+       Online Launch
+      </a>
+      <br />
+      <br />
       <div className="inline-block mb-6 px-3 py-1 border border-aureus-gold rounded-full text-xs font-bold tracking-widest text-aureus-gold uppercase">
         Institutional Grade Decision Framework
       </div>
@@ -30,7 +38,6 @@ export default function HeroSection() {
         —the exact framework used by the top 1% to dominate Forex, Gold, Oil and
         Indices.
       </p>
-
       {/* Featured Snippet Block */}
       <div className="bg-white border-l-4 border-aureus-gold shadow-lg p-6 md:p-8 text-left max-w-3xl mx-auto rounded-r-lg mb-12">
         <div className="flex items-start gap-4">
@@ -52,7 +59,7 @@ export default function HeroSection() {
 
       <a
         href='/online-launch'
-        className="inline-block gold-gradient text-white px-8 py-4 rounded font-medium tracking-wide shadow-md hover:shadow-xl hover:scale-105 transition-all transform duration-300 uppercase text-sm"
+        className="inline-block gold-gradient text-white px-8 py-4 rounded font-medium tracking-wide shadow-md hover:shadow-xl hover:scale-105 transition-all transform duration-300 uppercase text-xl"
       >
        Online Launch
       </a>

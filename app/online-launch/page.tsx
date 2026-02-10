@@ -3,6 +3,26 @@ export default function AureusLogicLaunch() {
     <div className="min-h-screen bg-white text-zinc-900">
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-16">
+                <section>
+          <h2 className="text-2xl font-light mb-6" style={{ color: '#c5a059' }}>
+            Registration
+          </h2>
+          
+          <p className="text-zinc-700 mb-8 leading-relaxed">
+            This session is designed for traders and operators focused on the highest standards of performance.
+          </p>
+          
+          <a 
+            href="https://zoom.us/meeting/register/f6fdgUolQBO57cTqOnBxQw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 rounded-lg font-medium transition-all hover:opacity-90"
+            style={{ backgroundColor: '#c5a059', color: '#fff' }}
+          >
+            Register Here
+          </a>
+          <br /><br />
+        </section>
         {/* Intro */}
         <div className="mb-16">
           <p className="text-zinc-600 mb-6 leading-relaxed">

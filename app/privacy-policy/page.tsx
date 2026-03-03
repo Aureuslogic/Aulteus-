@@ -4,8 +4,8 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Aureus Logic',
-  description: 'FCA Aware Privacy Policy for Aureus Logic',
+  title: 'Privacy Policy | Aulteus Logic',
+  description: 'FCA Aware Privacy Policy for Aulteus Logic',
 };
 
 export default function PrivacyPolicyPage() {
@@ -16,13 +16,13 @@ export default function PrivacyPolicyPage() {
     >
       <div className="mb-8">
         <h2 className="text-3xl font-serif font-bold text-aureus-dark ">
-          Aureus Logic
+          Aulteus Logic
         </h2>
       </div>
 
       <LegalSection title="Introduction">
         <p>
-          This Privacy Policy explains how Aureus Logic processes personal data
+          This Privacy Policy explains how Aulteus Logic processes personal data
           in compliance with:
         </p>
         <ul className="list-disc pl-6 space-y-2">
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
           <li>Data Protection Act 2018</li>
         </ul>
         <p>
-          Aureus Logic recognises the importance of data protection in regulated
+          Aulteus Logic recognises the importance of data protection in regulated
           and unregulated financial adjacent environments and applies governance
           standards appropriate to that context.
         </p>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
 
       <LegalSection title="Data Controller">
         <p>
-          Aureus Logic acts as the data controller for all personal data
+          Aulteus Logic acts as the data controller for all personal data
           processed through its website, systems, and educational tools.
         </p>
       </LegalSection>

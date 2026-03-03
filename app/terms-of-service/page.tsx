@@ -3,8 +3,8 @@ import LegalSection from '@/components/sections/legalSection';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Aureus Logic',
-  description: 'FCA Perimeter Safe Terms of Service for Aureus Logic',
+  title: 'Terms of Service | Aulteus Logic',
+  description: 'FCA Perimeter Safe Terms of Service for Aulteus Logic',
 };
 
 export default function TermsOfServicePage() {
@@ -15,14 +15,14 @@ export default function TermsOfServicePage() {
     >
       <div className="mb-8">
         <h2 className="text-3xl font-serif font-bold text-aureus-dark mb-4">
-          Aureus Logic
+          Aulteus Logic
         </h2>
       </div>
 
       <LegalSection title="Agreement to Terms">
         <p>
           <strong>
-            By accessing or using Aureus Logic, you agree to these Terms of
+            By accessing or using Aulteus Logic, you agree to these Terms of
             Service.
           </strong>
         </p>
@@ -33,12 +33,12 @@ export default function TermsOfServicePage() {
 
       <LegalSection title="Nature of the Service">
         <p>
-          Aureus Logic provides technology-enabled education and decision
+          Aulteus Logic provides technology-enabled education and decision
           intelligence frameworks relating to market structure and analytical
           thinking.
         </p>
         <p>
-          <strong>Aureus Logic does not:</strong>
+          <strong>Aulteus Logic does not:</strong>
         </p>
         <ul className="list-disc pl-6 space-y-2">
           <li>Provide investment advice</li>
@@ -65,7 +65,7 @@ export default function TermsOfServicePage() {
         </ul>
         <p>
           <strong>
-            You agree not to rely on Aureus Logic as a substitute for regulated
+            You agree not to rely on Aulteus Logic as a substitute for regulated
             financial advice.
           </strong>
         </p>
@@ -74,7 +74,7 @@ export default function TermsOfServicePage() {
       <LegalSection title="Intellectual Property">
         <p>
           All content, frameworks, systems, and materials are the intellectual
-          property of Aureus Logic.
+          property of Aulteus Logic.
         </p>
         <p>
           <strong>
@@ -86,7 +86,7 @@ export default function TermsOfServicePage() {
 
       <LegalSection title="Limitation of Liability">
         <p>
-          To the fullest extent permitted by law, Aureus Logic shall not be
+          To the fullest extent permitted by law, Aulteus Logic shall not be
           liable for:
         </p>
         <ul className="list-disc pl-6 space-y-2">
@@ -131,7 +131,7 @@ export default function TermsOfServicePage() {
         </p>
         <p className="text-aureus-dark">
           These Terms of Service are designed to operate within the FCA
-          regulatory perimeter. By using Aureus Logic, you acknowledge that the
+          regulatory perimeter. By using Aulteus Logic, you acknowledge that the
           service is educational in nature and does not constitute regulated
           financial advice or services.
         </p>

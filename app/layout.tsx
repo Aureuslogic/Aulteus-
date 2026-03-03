@@ -19,9 +19,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Non Linear Decision Intelligence | Aureus Logic & The Banker's Code",
+  title: "Non Linear Decision Intelligence | Aulteus Logic & The Banker's Code",
   description:
-    "Stop Guessing. Start Trading with Institutional Precision. Aureus Logic is the exact framework used by the top 1% to dominate Forex, Gold, Oil and Indices.",
+    "Stop Guessing. Start Trading with Institutional Precision. Aulteus Logic is the exact framework used by the top 1% to dominate Forex, Gold, Oil and Indices.",
 };
 
 export default function RootLayout({
@@ -47,7 +47,7 @@ export default function RootLayout({
           public-key={process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY}
           assistant-id={process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID}
           mode="voice"
-          main-label="Talk to Aureus Agent"
+          main-label="Talk to Aulteus Agent"
           theme="light"
           accent-color="#c5a059"
           empty-voice-message="Click to start a voice conversation"

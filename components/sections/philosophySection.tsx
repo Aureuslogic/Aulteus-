@@ -26,7 +26,7 @@ export default function PhilosophySection() {
           <div className="my-10 h-px w-24 bg-aureus-gold mx-auto"></div>
 
           <p className="font-serif text-2xl">
-            Aureus Logic exists to resolve this mismatch.
+            Aulteus Logic exists to resolve this mismatch.
           </p>
           <p>
             Not by adding more signals. <br />

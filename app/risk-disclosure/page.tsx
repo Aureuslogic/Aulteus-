@@ -4,8 +4,8 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: 'Risk Disclosure | Aureus Logic',
-  description: 'FCA Perimeter Aligned Risk Disclosure for Aureus Logic',
+  title: 'Risk Disclosure | Aulteus Logic',
+  description: 'FCA Perimeter Aligned Risk Disclosure for Aulteus Logic',
 };
 
 export default function RiskDisclosurePage() {
@@ -16,7 +16,7 @@ export default function RiskDisclosurePage() {
     >
       <div className="mb-8">
         <h2 className="text-3xl font-serif font-bold text-aureus-dark mb-4">
-          Aureus Logic
+          Aulteus Logic
         </h2>
         <h3 className="text-xl font-bold text-aureus-gold mb-6">
           Regulatory Positioning Statement
@@ -25,12 +25,12 @@ export default function RiskDisclosurePage() {
 
       <LegalSection title="FCA Perimeter Aligned Risk Disclosure">
         <p>
-          Aureus Logic operates as a technology education and decision
+          Aulteus Logic operates as a technology education and decision
           intelligence company.
         </p>
         <p>
           <strong>
-            Aureus Logic is not authorised or regulated by the Financial Conduct
+            Aulteus Logic is not authorised or regulated by the Financial Conduct
             Authority
           </strong>{' '}
           and does not carry on any regulated activity as defined under the
@@ -38,7 +38,7 @@ export default function RiskDisclosurePage() {
           Markets Act 2000 Regulated Activities Order.
         </p>
         <p>
-          <strong>Nothing provided by Aureus Logic constitutes:</strong>
+          <strong>Nothing provided by Aulteus Logic constitutes:</strong>
         </p>
         <ul className="list-disc pl-6 space-y-2">
           <li>Investment advice</li>
@@ -54,7 +54,7 @@ export default function RiskDisclosurePage() {
       <LegalSection title="Educational and Informational Scope">
         <p>
           All materials, outputs, insights, frameworks, analyses, probabilities,
-          and decision intelligence produced by Aureus Logic are provided
+          and decision intelligence produced by Aulteus Logic are provided
           strictly on a <strong>non-advisory, non-personalised, and educational
           basis</strong>.
         </p>
@@ -63,7 +63,7 @@ export default function RiskDisclosurePage() {
           individual user.
         </p>
         <p>
-          <strong>Aureus Logic does not assess:</strong>
+          <strong>Aulteus Logic does not assess:</strong>
         </p>
         <ul className="list-disc pl-6 space-y-2">
           <li>Individual financial circumstances</li>
@@ -101,7 +101,7 @@ export default function RiskDisclosurePage() {
 
       <LegalSection title="No Personal Recommendation">
         <p>
-          Aureus Logic does not make personal recommendations as defined by the
+          Aulteus Logic does not make personal recommendations as defined by the
           FCA.
         </p>
         <p>
@@ -126,7 +126,7 @@ export default function RiskDisclosurePage() {
 
       <LegalSection title="No Guarantees">
         <p>
-          Aureus Logic provides no guarantees of performance, accuracy,
+          Aulteus Logic provides no guarantees of performance, accuracy,
           completeness, or outcomes.
         </p>
         <p>
@@ -136,7 +136,7 @@ export default function RiskDisclosurePage() {
 
       <div className="mt-12 p-6 bg-aureus-bg border-l-4 border-aureus-gold rounded">
         <p className="font-bold text-aureus-dark">
-          By accessing or using Aureus Logic, you confirm your understanding of
+          By accessing or using Aulteus Logic, you confirm your understanding of
           and acceptance of this regulatory position.
         </p>
       </div>

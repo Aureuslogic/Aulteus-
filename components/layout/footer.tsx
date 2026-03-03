@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-sm">
         <div>
           <h3 className="font-serif font-bold text-xl mb-4 aureus-gold">
-            AUREUS LOGIC
+            AULTEUS LOGIC
           </h3>
           <p className="text-gray-800">
             Moving traders from reaction to control through non linear decision
@@ -18,7 +18,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-800">
             <li>
               <a href="https://aureuslogic.com/#" className="hover:text-black transition-colors">
-                Aureus Logic Framework
+                Aulteus Logic Framework
               </a>
             </li>
             <li>
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
-        &copy; {currentYear} Aureus Logic. All Rights Reserved. Aureus Logic is
+        &copy; {currentYear} Aulteus Logic. All Rights Reserved. Aulteus Logic is
         a decision support tool, not financial advice.
       </div>
     </footer>

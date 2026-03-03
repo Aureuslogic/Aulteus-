@@ -19,7 +19,7 @@ const pricingOptions: PricingOption[] = [
     description:
       'Designed for experienced traders who already understand market structure.',
     features: [
-      'Access to the Aureus Logic decision asset framework',
+      'Access to the Aulteus Logic decision asset framework',
       'Daily live War Room decision sessions',
       'One to one onboarding',
     ],
@@ -35,7 +35,7 @@ const pricingOptions: PricingOption[] = [
       'Designed for traders who want education and decision governance combined.',
     features: [
       'Full Education (How Banks Trade)',
-      'Access to the Aureus Logic decision asset framework',
+      'Access to the Aulteus Logic decision asset framework',
       'Daily live War Room decision sessions',
       'One to one onboarding and framework orientation',
     ],

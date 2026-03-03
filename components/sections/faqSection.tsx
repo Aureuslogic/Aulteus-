@@ -10,102 +10,102 @@ interface FAQ {
 
 const faqs: FAQ[] = [
   {
-    question: 'Is Aureus Logic regulated by the Financial Conduct Authority?',
+    question: 'Is Aulteus Logic regulated by the Financial Conduct Authority?',
     answer: [
       'No.',
-      'Aureus Logic is not authorised or regulated by the Financial Conduct Authority.',
-      'Aureus Logic does not carry on any regulated activity under the Financial Services and Markets Act 2000 or the Regulated Activities Order.',
+      'Aulteus Logic is not authorised or regulated by the Financial Conduct Authority.',
+      'Aulteus Logic does not carry on any regulated activity under the Financial Services and Markets Act 2000 or the Regulated Activities Order.',
     ],
   },
   {
-    question: 'Does Aureus Logic provide investment advice or financial advice?',
+    question: 'Does Aulteus Logic provide investment advice or financial advice?',
     answer: [
       'No.',
-      'Aureus Logic does not provide investment advice, financial advice, personal recommendations, or suitability assessments.',
+      'Aulteus Logic does not provide investment advice, financial advice, personal recommendations, or suitability assessments.',
       'All content and outputs are provided strictly for educational and informational purposes only and are general in nature.',
     ],
   },
   {
-    question: 'Does Aureus Logic tell users what trades to place?',
+    question: 'Does Aulteus Logic tell users what trades to place?',
     answer: [
       'No.',
-      'Aureus Logic does not instruct users to place trades, execute trades, or take any specific financial action.',
+      'Aulteus Logic does not instruct users to place trades, execute trades, or take any specific financial action.',
       'Any market analysis, scenarios, probabilities, or decision frameworks are provided solely to illustrate educational concepts and analytical thinking.',
       'All decisions remain the sole responsibility of the user.',
     ],
   },
   {
-    question: 'Does Aureus Logic make personal recommendations?',
+    question: 'Does Aulteus Logic make personal recommendations?',
     answer: [
       'No.',
-      'Aureus Logic does not make personal recommendations as defined by the Financial Conduct Authority.',
+      'Aulteus Logic does not make personal recommendations as defined by the Financial Conduct Authority.',
       'The platform does not consider individual financial circumstances, objectives, experience, or risk tolerance.',
       'All information is non-personalised and non-advisory.',
     ],
   },
   {
-    question: 'Is Aureus Logic a trading platform or broker?',
+    question: 'Is Aulteus Logic a trading platform or broker?',
     answer: [
       'No.',
-      'Aureus Logic is not a trading platform, broker, execution venue, or intermediary.',
-      'Aureus Logic does not connect to brokerage accounts, does not execute transactions, and does not hold client funds.',
+      'Aulteus Logic is not a trading platform, broker, execution venue, or intermediary.',
+      'Aulteus Logic does not connect to brokerage accounts, does not execute transactions, and does not hold client funds.',
       'Users independently choose their own trading platforms or brokers if they decide to participate in markets.',
     ],
   },
   {
-    question: 'Does Aureus Logic use automated or algorithmic trading?',
+    question: 'Does Aulteus Logic use automated or algorithmic trading?',
     answer: [
       'No.',
-      'Aureus Logic does not trade on behalf of users and does not provide automated trading, discretionary trading, or account control.',
-      'Any intelligence produced by Aureus Logic is used at the discretion of the user as part of their own independent decision making process.',
+      'Aulteus Logic does not trade on behalf of users and does not provide automated trading, discretionary trading, or account control.',
+      'Any intelligence produced by Aulteus Logic is used at the discretion of the user as part of their own independent decision making process.',
     ],
   },
   {
-    question: 'Does Aureus Logic guarantee profits or outcomes?',
+    question: 'Does Aulteus Logic guarantee profits or outcomes?',
     answer: [
       'No.',
-      'Aureus Logic makes no guarantees regarding performance, profitability, accuracy, or outcomes.',
+      'Aulteus Logic makes no guarantees regarding performance, profitability, accuracy, or outcomes.',
       'Capital markets involve risk and losses may occur.',
       'Past examples or illustrations are not indicative of future results.',
     ],
   },
   {
-    question: 'Does Aureus Logic tell users when not to trade?',
+    question: 'Does Aulteus Logic tell users when not to trade?',
     answer: [
-      'Aureus Logic may identify market conditions that are presented educationally as unclear, unstable, or high risk.',
+      'Aulteus Logic may identify market conditions that are presented educationally as unclear, unstable, or high risk.',
       'In such cases, remaining neutral or taking no action may be highlighted as a valid educational outcome.',
       'This does not constitute advice or a recommendation and remains part of general decision education.',
     ],
   },
   {
-    question: 'Who is responsible for decisions made using Aureus Logic?',
+    question: 'Who is responsible for decisions made using Aulteus Logic?',
     answer: [
       'The user is fully and solely responsible for all decisions made.',
-      'Aureus Logic does not accept responsibility for trades placed, losses incurred, or actions taken based on the use of its educational materials or tools.',
+      'Aulteus Logic does not accept responsibility for trades placed, losses incurred, or actions taken based on the use of its educational materials or tools.',
       'Users should seek independent advice from a suitably authorised professional if required.',
     ],
   },
   {
-    question: 'Does Aureus Logic fall within the FCA regulatory perimeter?',
+    question: 'Does Aulteus Logic fall within the FCA regulatory perimeter?',
     answer: [
       'No.',
-      'Aureus Logic is designed and operated to remain outside the FCA regulatory perimeter.',
+      'Aulteus Logic is designed and operated to remain outside the FCA regulatory perimeter.',
       'The service does not involve advising on investments, dealing in investments, arranging transactions, portfolio management, or discretionary management.',
     ],
   },
   {
-    question: 'Can Aureus Logic be used with any trading platform?',
+    question: 'Can Aulteus Logic be used with any trading platform?',
     answer: [
       'Yes.',
-      'Because Aureus Logic is not a trading platform, it may be used alongside any broker or platform chosen independently by the user.',
-      'Aureus Logic does not integrate with, endorse, or monitor third party platforms.',
+      'Because Aulteus Logic is not a trading platform, it may be used alongside any broker or platform chosen independently by the user.',
+      'Aulteus Logic does not integrate with, endorse, or monitor third party platforms.',
     ],
   },
   {
-    question: 'Does Aureus Logic hold or process client money?',
+    question: 'Does Aulteus Logic hold or process client money?',
     answer: [
       'No.',
-      'Aureus Logic does not hold, receive, process, or control client funds or financial accounts.',
+      'Aulteus Logic does not hold, receive, process, or control client funds or financial accounts.',
       'All financial transactions related to market participation are conducted independently by users through third party providers.',
     ],
   },
@@ -138,7 +138,7 @@ export default function FAQSection() {
           Regulatory and Compliance FAQs
         </h2>
         <p className="text-center text-aureus-muted mb-10">
-          Important information about Aureus Logic&apos;s regulatory positioning
+          Important information about Aulteus Logic&apos;s regulatory positioning
         </p>
 
         <div className="space-y-4">
@@ -169,8 +169,8 @@ export default function FAQSection() {
             Have more questions?
           </p>
           <p className="text-sm text-aureus-dark">
-           contact us at{' '} <a href="mailto:Hello@aureuslogic.com" className="text-aureus-gold hover:text-aureus-goldHover underline">
-           Hello@aureuslogic.com 
+           contact us at{' '} <a href="mailto:Hello@aulteuslogic.com" className="text-aureus-gold hover:text-aureus-goldHover underline">
+           Hello@aulteuslogic.com 
           </a>
           </p>
         </div>

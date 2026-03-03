@@ -27,14 +27,14 @@ export default function AureusLogicLaunch() {
         <div className="mb-16">
           <p className="text-zinc-600 mb-6 leading-relaxed">
             Following the in-person launch at 22 Bishopsgate in the City of London in January this year, 
-            we are now opening Aureus Logic to a wider audience through an exclusive online launch.
+            we are now opening Aulteus Logic to a wider audience through an exclusive online launch.
           </p>
           <p className="text-zinc-800 leading-relaxed mb-6">
-            Aureus Logic is an Agentic AI decision framework designed to help traders understand and 
+            Aulteus Logic is an Agentic AI decision framework designed to help traders understand and 
             navigate the capital markets with greater clarity, structure, and discipline.
           </p>
           <p className="text-zinc-700 leading-relaxed">
-            In a marketplace defined by speed and noise, Aureus Logic provides a structured way to 
+            In a marketplace defined by speed and noise, Aulteus Logic provides a structured way to 
             interpret real-time liquidity and market behaviour, reducing emotional bias and supporting 
             more consistent decision making. It is built for those who prioritise precision, reasoning, 
             and agentic execution over guesswork.
@@ -58,7 +58,7 @@ export default function AureusLogicLaunch() {
             <div className="border-l-2 pl-6" style={{ borderColor: '#c5a059' }}>
               <h3 className="text-lg font-medium mb-2 text-zinc-900">Live Demonstration</h3>
               <p className="text-zinc-600">
-                A practical walkthrough showing how Aureus Logic interprets market conditions in real time.
+                A practical walkthrough showing how Aulteus Logic interprets market conditions in real time.
               </p>
             </div>
 

@@ -44,10 +44,10 @@ export default function HeroSection() {
           <ShieldCheck className="w-6 h-6 text-aureus-gold shrink-0 mt-1" />
           <div>
             <h3 className="font-serif font-bold text-lg mb-2">
-              What is Aureus Logic?
+              What is Aulteus Logic?
             </h3>
             <p className="text-aureus-dark leading-relaxed">
-              Aureus Logic is a non linear decision asset framework expressed
+              Aulteus Logic is a non linear decision asset framework expressed
               through Agentic AI. It helps traders decide whether to act, remain
               neutral, or wait during uncertain market conditions. It does not
               place trades, is not a trading platform, and can be used alongside

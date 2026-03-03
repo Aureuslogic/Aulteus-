@@ -11,7 +11,7 @@ export default function IntroductionSection() {
 
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8">
-          Introducing <span className="aureus-gold">Aureus Logic</span>
+          Introducing <span className="aureus-gold">Aulteus Logic</span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">
@@ -42,7 +42,7 @@ export default function IntroductionSection() {
         </div>
 
         <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed">
-          "Aureus Logic continuously evaluates market conditions and determines
+          "Aulteus Logic continuously evaluates market conditions and determines
           whether any action is justified at all. Sometimes the appropriate
           outcome is a position.{" "}
           <span className="aureus-gold font-medium">

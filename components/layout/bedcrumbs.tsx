@@ -4,7 +4,7 @@ export default function Breadcrumbs() {
       <p className="text-xs uppercase tracking-widest text-aureus-muted">
         Home <span className="mx-2 text-aureus-gold">›</span>
         Agentic Decision Intelligence <span className="mx-2 text-aureus-gold">›</span>
-        <span className="font-bold text-aureus-dark">Aureus Logic</span>
+        <span className="font-bold text-aureus-dark">Aulteus Logic</span>
       </p>
     </div>
   );

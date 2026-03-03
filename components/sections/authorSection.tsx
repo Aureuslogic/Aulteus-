@@ -14,7 +14,7 @@ export default function AuthorSection() {
           </div>
           <h3 className="font-serif font-bold text-2xl">Sam Onigbanjo</h3>
           <p className="text-xs tracking-widest uppercase text-aureus-gold mt-2 font-bold">
-            Inventor of Aureus Logic
+            Inventor of Aulteus Logic
           </p>
           <p className="text-xs text-gray-500 mt-1">
             Creator of &quot;The Banker&apos;s Code&quot;
@@ -27,7 +27,7 @@ export default function AuthorSection() {
           </h2>
           <div className="prose prose-lg text-aureus-dark">
             <p className="italic mb-6">
-              &quot;I did not create Aureus Logic to trade for people. I
+              &quot;I did not create Aulteus Logic to trade for people. I
               authored it to govern decision making under uncertainty.&quot;
             </p>
             <p className="mb-4">
@@ -38,13 +38,13 @@ export default function AuthorSection() {
             </p>
             <p className="mb-4 font-bold">Systems beat luck every time.</p>
             <p className="mb-6">
-              Aureus Logic is the non linear decision framework I wished existed
+              Aulteus Logic is the non linear decision framework I wished existed
               earlier in my career.
             </p>
             <div className="p-4 bg-aureus-bg border-l-4 border-aureus-gold">
               <p className="font-bold text-aureus-dark">The Real Edge</p>
               <p className="text-sm">
-                Most AI accelerates action. Aureus Logic governs it. That
+                Most AI accelerates action. Aulteus Logic governs it. That
                 difference is where capital survives long enough to compound.
               </p>
             </div>

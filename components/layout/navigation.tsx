@@ -19,7 +19,7 @@ export default function Navigation() {
   return (
     <nav className="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
       <div>
-        <Image src='/assets/logo.png' width={200} height={100} alt='logo' />
+        <Image src='/assets/logo-new.png' width={120} height={100} alt='logo' />
       </div>
 
       {/* Desktop Menu */}

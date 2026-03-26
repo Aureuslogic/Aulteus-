@@ -42,12 +42,12 @@ export default function Navigation() {
         >
           Inventor
         </button>
-         <a
+         {/* <a
           href='/online-launch'
           className="hover:text-aureus-gold transition-colors py-2"
         >
           Online Launch
-        </a>
+        </a> */}
         <a
           href="https://aureus-logic.vercel.app/login" target='_blank'
           className="text-white font-bold bg-black cursor-pointer px-4 py-2 rounded transition-colors"
@@ -87,12 +87,12 @@ export default function Navigation() {
             >
               Author
             </button>
-                <a
+                {/* <a
           href='/online-launch'
           className="hover:text-aureus-gold transition-colors"
         >
           Online Launch
-        </a>
+        </a> */}
                <a
           href="https://aureus-logic.vercel.app/login" target='_blank'
           className="text-white font-bold bg-black cursor-pointer px-4 py-2 rounded transition-colors"

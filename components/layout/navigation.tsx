@@ -19,7 +19,7 @@ export default function Navigation() {
   return (
     <nav className="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
       <div>
-        <Image src='/assets/logo-new.png' width={120} height={100} alt='logo' />
+        <Image src='/assets/logo-new.png' width={120} height={100} alt='Aulteus Logic logo' />
       </div>
 
       {/* Desktop Menu */}
@@ -49,7 +49,7 @@ export default function Navigation() {
           Online Launch
         </a> */}
         <a
-          href="https://aureus-logic.vercel.app/login" target='_blank'
+          href="https://app.aulteuslogic.com/login" target='_blank'
           className="text-white font-bold bg-black cursor-pointer px-4 py-2 rounded transition-colors"
         >
           Login
@@ -94,7 +94,7 @@ export default function Navigation() {
           Online Launch
         </a> */}
                <a
-          href="https://aureus-logic.vercel.app/login" target='_blank'
+          href="https://app.aulteuslogic.com/login" target='_blank'
           className="text-white font-bold bg-black cursor-pointer px-4 py-2 rounded transition-colors"
         >
           Login

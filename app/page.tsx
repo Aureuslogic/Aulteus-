@@ -7,10 +7,19 @@ import HiddenTruthSection from "@/components/sections/hiddenTruthSection";
 import IntroductionSection from "@/components/sections/introductionSection";
 import LogicEngineSection from "@/components/sections/logicSection";
 import PhilosophySection from "@/components/sections/philosophySection";
+import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
       <Breadcrumbs />
       <HeroSection />
       <PhilosophySection />

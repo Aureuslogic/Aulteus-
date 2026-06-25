@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | Aulteus Logic',
   description: 'FCA Perimeter Safe Terms of Service for Aulteus Logic',
+  alternates: {
+    canonical: '/terms-of-service',
+  },
 };
 
 export default function TermsOfServicePage() {

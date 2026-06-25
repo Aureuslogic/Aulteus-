@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -17,19 +19,19 @@ export default function Footer() {
           <h4 className="font-bold mb-4 aureus-gold">Product</h4>
           <ul className="space-y-2 text-gray-800">
             <li>
-              <a href="https://aureuslogic.com/#" className="hover:text-black transition-colors">
+              <Link href="/#framework" className="hover:text-black transition-colors">
                 Aulteus Logic Framework
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-black transition-colors">
-                The Banker&apos;s Code Bundle
-              </a>
+              <Link href="/#access" className="hover:text-black transition-colors">
+                The Aulteus Logic Complete Mentorship
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-black transition-colors">
+              <Link href="/#access" className="hover:text-black transition-colors">
                 War Room Access
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

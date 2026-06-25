@@ -9,7 +9,7 @@ export default function AuthorSection() {
           <div className="w-48 h-48 bg-gray-200 rounded-full mb-6 overflow-hidden border-4 border-aureus-gold shadow-xl">
             {/* Placeholder for Sam's Image */}
             <div className="w-full h-full aureus-dark-bg flex items-center justify-center text-white">
-             <Image src="/assets/author.jpg" alt="Sam Onigbanjo" width={500} height={500}  className={styles.imageStyles}/>
+             <Image src="/assets/author.jpg" alt="Sam Onigbanjo, Inventor of Aulteus Logic" width={500} height={500}  className={styles.imageStyles}/>
             </div>
           </div>
           <h3 className="font-serif font-bold text-2xl">Sam Onigbanjo</h3>
@@ -17,7 +17,7 @@ export default function AuthorSection() {
             Inventor of Aulteus Logic
           </p>
           <p className="text-xs text-gray-500 mt-1">
-            Creator of &quot;The Banker&apos;s Code&quot;
+            Inventor of the Aulteus Logic Decision Framework
           </p>
         </div>
 

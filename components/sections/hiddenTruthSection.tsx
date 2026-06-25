@@ -2,7 +2,7 @@ import { CheckCircle, Scale } from 'lucide-react';
 
 export default function HiddenTruthSection() {
   const benefits = [
-    'How structure is read (The Banker\'s Way)',
+    'How structure is read the institutional way',
     'How risk is framed before opportunity',
     'How patience becomes a strategic advantage',
   ];

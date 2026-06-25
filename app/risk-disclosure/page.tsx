@@ -6,6 +6,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Risk Disclosure | Aulteus Logic',
   description: 'FCA Perimeter Aligned Risk Disclosure for Aulteus Logic',
+  alternates: {
+    canonical: '/risk-disclosure',
+  },
 };
 
 export default function RiskDisclosurePage() {

@@ -1,0 +1,42 @@
+# Aulteus Logic
+
+> A non linear decision asset framework for Forex, Gold, Oil and Indices traders.
+
+Aulteus Logic is an institutional decision governance framework expressed through Agentic AI. It helps traders decide whether to act, remain neutral, or wait during uncertain market conditions.
+
+## What Aulteus Logic Is
+
+- A non linear decision framework for use alongside any trading platform
+- An educational tool teaching institutional decision governance
+- A bounded autonomous decision asset that governs judgement, not execution
+
+## What Aulteus Logic Is Not
+
+- Not a trading platform or broker
+- Not financial advice or investment advice
+- Not an algorithmic or automated trading system
+- Not regulated by the Financial Conduct Authority
+- Not a personal recommendation service
+
+## Founder
+
+Sam Onigbanjo, inventor of Aulteus Logic. Background in corporate strategy and capital markets.
+
+## Contact
+
+Email: Hello@aulteuslogic.com
+
+Website: https://aulteuslogic.com
+
+## Key Topics Covered
+
+- Non linear decision intelligence
+- Institutional trading methodology
+- Forex decision framework
+- Gold, Oil and Indices trading education
+- Decision governance under uncertainty
+- Market structure analysis
+- Agentic AI for trading decisions
+- Multi timeframe analysis
+- Institutional volume and liquidity
+- Volatility regime assessment

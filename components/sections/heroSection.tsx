@@ -31,12 +31,12 @@ export default function HeroSection() {
       </h1>
 
       <p className="text-lg md:text-xl text-aureus-dark mb-10 font-light max-w-4xl mx-auto leading-relaxed">
-        The retail market is designed to make you fail. We teach you the{' '}
+        The retail market is designed to make you fail. We teach you{' '}
         <span className="font-serif font-bold italic text-aureus-dark highlight-underline">
-          &quot;Banker&apos;s Code&quot;
+          Aulteus Logic
         </span>
-        —the exact framework used by the top 1% to dominate Forex, Gold, Oil and
-        Indices.
+        , the exact decision framework used by the top 1% to govern Forex, Gold,
+        Oil and Indices.
       </p>
       {/* Featured Snippet Block */}
       <div className="bg-white border-l-4 border-aureus-gold shadow-lg p-6 md:p-8 text-left max-w-3xl mx-auto rounded-r-lg mb-12">

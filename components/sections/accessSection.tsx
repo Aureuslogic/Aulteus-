@@ -30,7 +30,7 @@ const pricingOptions: PricingOption[] = [
     featured: true,
     badge: 'Recommended',
     category: 'Complete Mentorship',
-    title: "The Banker's Code Bundle",
+    title: 'The Aulteus Logic Complete Mentorship',
     description:
       'Designed for traders who want education and decision governance combined.',
     features: [

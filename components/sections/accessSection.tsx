@@ -1,120 +1,78 @@
-import { Check } from 'lucide-react';
-import Link from 'next/link';
-
-interface PricingOption {
-  featured?: boolean;
-  badge?: string;
-  category: string;
-  title: string;
-  description: string;
-  features: string[];
-  buttonText: string;
-  buttonLink: string;
-}
-
-const pricingOptions: PricingOption[] = [
+const PLANS = [
   {
-    category: 'Framework Only',
+    tier: 'Framework Only',
     title: 'Decision Framework Access',
-    description:
-      'Designed for experienced traders who already understand market structure.',
     features: [
       'Access to the Aulteus Logic decision asset framework',
       'Daily live War Room decision sessions',
-      'One to one onboarding',
+      'One-to-one onboarding',
+      'Agentic AI decision tool access',
     ],
-    buttonText: 'Select Access',
-    buttonLink: "https://aureus-logic.vercel.app/app?plan=standard",
+    cta: 'Select Access',
+    href: 'https://aureus-logic.vercel.app/app?plan=standard',
+    featured: false,
   },
   {
-    featured: true,
-    badge: 'Recommended',
-    category: 'Complete Mentorship',
+    tier: 'Complete Mentorship',
     title: 'The Aulteus Logic Complete Mentorship',
-    description:
-      'Designed for traders who want education and decision governance combined.',
     features: [
-      'Full Education (How Banks Trade)',
+      'Full Education — How Banks Trade',
       'Access to the Aulteus Logic decision asset framework',
       'Daily live War Room decision sessions',
-      'One to one onboarding and framework orientation',
+      'One-to-one onboarding and framework orientation',
+      'Agentic AI decision tool — full access',
     ],
-    buttonText: 'Join The 1%',
-    buttonLink: 'https://aureus-logic.vercel.app/app?plan=mentorship',
+    cta: 'Join The 1%',
+    href: 'https://aureus-logic.vercel.app/app?plan=mentorship',
+    featured: true,
   },
 ];
 
+function CheckIcon() {
+  return (
+    <span className="feature-check" aria-hidden="true">
+      <svg viewBox="0 0 10 10" fill="none">
+        <polyline points="2,5 4.5,7.5 8,3" />
+      </svg>
+    </span>
+  );
+}
+
 export default function AccessSection() {
   return (
-    <section id="access" className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-center text-4xl font-serif font-bold mb-16">
-        Secure Your Unfair Advantage
-      </h2>
+    <section className="access-section section" id="access" aria-labelledby="access-heading">
+      <div className="section-inner">
+        <p className="eyebrow">Choose Your Path</p>
+        <h2 className="section-h" id="access-heading">Secure Your Unfair Advantage</h2>
+        <p className="section-p">
+          Both programmes give you access to the Aulteus Logic decision framework.
+          The Complete Mentorship adds structured education, live sessions, and ongoing support.
+        </p>
 
-      <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        {pricingOptions.map((option, index) => (
-          <div
-            key={index}
-            className={`${
-              option.featured
-                ? 'aureus-dark-bg text-white shadow-2xl transform md:-translate-y-4'
-                : 'bg-white shadow-lg'
-            } rounded-lg p-8 border ${
-              option.featured ? 'border-aureus-dark' : 'border-gray-200'
-            } flex flex-col relative`}
-          >
-            {option.badge && (
-              <div className="absolute top-0 right-0 aureus-gold-bg text-white text-xs font-bold px-4 py-1 rounded-bl uppercase tracking-widest">
-                {option.badge}
-              </div>
-            )}
-
-            <div className="mb-6">
-              <span
-                className={`text-xs font-bold tracking-widest uppercase ${
-                  option.featured ? 'aureus-gold' : 'text-gray-500'
-                }`}
+        <div className="access-grid">
+          {PLANS.map((plan) => (
+            <div key={plan.tier} className={`access-card${plan.featured ? ' featured' : ''}`}>
+              <div className="access-tier">{plan.tier}</div>
+              <h3 className="access-title">{plan.title}</h3>
+              <ul className="access-features" role="list">
+                {plan.features.map((f) => (
+                  <li key={f}>
+                    <CheckIcon />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={plan.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`access-btn ${plan.featured ? 'access-btn-primary' : 'access-btn-secondary'}`}
               >
-                {option.category}
-              </span>
-              <h3
-                className={`text-2xl font-serif font-bold mt-2 ${
-                  option.featured ? 'text-white' : ''
-                }`}
-              >
-                {option.title}
-              </h3>
-              <p
-                className={`text-sm mt-2 ${
-                  option.featured ? 'text-gray-400' : 'text-aureus-muted'
-                }`}
-              >
-                {option.description}
-              </p>
+                {plan.cta}
+              </a>
             </div>
-
-            <ul className="space-y-4 mb-8 flex-grow">
-              {option.features.map((feature, i) => (
-                <li key={i} className="flex items-start gap-3 text-sm">
-                  <Check className="w-5 h-5 aureus-gold shrink-0" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Link
-              href={option.buttonLink}
-              target="_blank"
-              className={`w-full py-3 font-bold uppercase tracking-widest rounded transition-all text-center block ${
-                option.featured
-                  ? 'gold-gradient text-white hover:shadow-lg hover:opacity-90'
-                  : 'border-2 border-aureus-gold aureus-gold hover:aureus-gold-bg hover:text-black'
-              }`}
-            >
-              {option.buttonText}
-            </Link>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -39,7 +39,7 @@ export default function LegalLayout({
         </header>
 
         {/* Content */}
-        <div className="bg-white rounded-lg shadow-sm p-8 md:p-12">
+        <div className="bg-white rounded-lg shadow-sm p-8 md:p-12" style={{ color: '#0f281e' }}>
           <div className="prose prose-lg max-w-none">
             {children}
           </div>

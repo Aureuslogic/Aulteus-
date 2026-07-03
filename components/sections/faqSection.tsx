@@ -1,70 +1,89 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 import { faqs } from '@/lib/faqs';
+import { useInView } from '@/hooks/useInView';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const { ref, inView } = useInView();
 
-  const toggleFaq = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
-  const renderAnswer = (answer: string | string[]) => {
-    if (Array.isArray(answer)) {
-      return (
-        <div className="space-y-2">
-          {answer.map((paragraph, idx) => (
-            <p key={idx}>{paragraph}</p>
-          ))}
-        </div>
-      );
-    }
-    return <p>{answer}</p>;
-  };
+  const renderAnswer = (answer: string | string[]) =>
+    Array.isArray(answer)
+      ? answer.map((p, i) => <p key={i}>{p}</p>)
+      : <p>{answer}</p>;
 
   return (
-    <section className="py-20 bg-white border-t border-gray-100">
-      <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-3xl font-serif font-bold mb-4 text-center">
-          Regulatory and Compliance FAQs
+    <section
+      className="faq-section"
+      aria-labelledby="faq-heading"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="faq-inner">
+        <p className={`eyebrow sr${inView ? ' visible' : ''}`} style={{ textAlign: 'center' }}>
+          Regulatory &amp; Compliance
+        </p>
+        <h2 className={`section-h sr sr-d1${inView ? ' visible' : ''}`} id="faq-heading" style={{ textAlign: 'center', maxWidth: '100%' }}>
+          Frequently Asked Questions
         </h2>
-        <p className="text-center text-aureus-muted mb-10">
+        <p className={`sr sr-d2${inView ? ' visible' : ''}`} style={{ textAlign: 'center', color: 'var(--white-dim)', marginBottom: '2.5rem', fontSize: '0.9rem' }}>
           Important information about Aulteus Logic&apos;s regulatory positioning
         </p>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border border-gray-200 rounded p-4">
+        {faqs.map((faq, i) => {
+          const isOpen = openIndex === i;
+          return (
+            <div
+              key={i}
+              className={`faq-item sr sr-d${Math.min(i + 1, 6)}${inView ? ' visible' : ''}`}
+            >
               <button
-                className="flex justify-between items-center w-full text-left font-bold"
-                onClick={() => toggleFaq(index)}
+                className="faq-question"
+                onClick={() => toggle(i)}
+                aria-expanded={isOpen}
+                aria-controls={`faq-answer-${i}`}
+                id={`faq-btn-${i}`}
               >
-                <span className="pr-4">{faq.question}</span>
-                <ChevronDown
-                  className={`w-5 h-5 text-aureus-gold transition-transform shrink-0 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                />
+                <span>{faq.question}</span>
+                <svg
+                  className={`faq-chevron${isOpen ? ' open' : ''}`}
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <polyline
+                    points="3,6 8,11 13,6"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </button>
-              {openIndex === index && (
-                <div className="mt-4 text-sm text-aureus-dark leading-relaxed">
+
+              {/* Smooth accordion via max-height transition */}
+              <div
+                id={`faq-answer-${i}`}
+                role="region"
+                aria-labelledby={`faq-btn-${i}`}
+                className={`faq-expand${isOpen ? ' open' : ''}`}
+              >
+                <div className="faq-answer">
                   {renderAnswer(faq.answer)}
                 </div>
-              )}
+              </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
 
-        <div className="mt-12 p-6 bg-aureus-bg border-l-4 border-aureus-gold rounded">
-          <p className="font-bold text-aureus-dark mb-2">
-            Have more questions?
-          </p>
-          <p className="text-sm text-aureus-dark">
-           contact us at{' '} <a href="mailto:Hello@aulteuslogic.com" className="text-aureus-gold hover:text-aureus-goldHover underline">
-           Hello@aulteuslogic.com 
-          </a>
+        <div className={`faq-contact-box sr sr-d4${inView ? ' visible' : ''}`}>
+          <p><strong style={{ color: 'var(--white)' }}>Have more questions?</strong></p>
+          <p>Contact us at{' '}
+            <a href="mailto:Hello@aulteuslogic.com">Hello@aulteuslogic.com</a>
           </p>
         </div>
       </div>

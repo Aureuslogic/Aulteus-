@@ -1,64 +1,63 @@
 import Link from 'next/link';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-aureus-dark text-white py-12 border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-sm">
+    <footer className="site-footer">
+      <div className="footer-inner">
+        {/* Brand column */}
         <div>
-          <h3 className="font-serif font-bold text-xl mb-4 aureus-gold">
-            AULTEUS LOGIC
-          </h3>
-          <p className="text-gray-800">
-            Moving traders from reaction to control through non linear decision
-            governance.
+          <div className="footer-brand">Aulteus Logic™</div>
+          <p className="footer-tagline">
+            Moving traders from reaction to control through non linear decision governance.
           </p>
+          <span className="footer-partner-tag">Official Partner: Trade Nation</span>
         </div>
+
+        {/* Product column */}
         <div>
-          <h4 className="font-bold mb-4 aureus-gold">Product</h4>
-          <ul className="space-y-2 text-gray-800">
+          <div className="footer-col-h">Product</div>
+          <ul className="footer-links" role="list">
+            <li><Link href="/#framework">The Aulteus Logic Framework</Link></li>
+            <li><Link href="/#access">The Aulteus Logic Complete Mentorship</Link></li>
+            <li><Link href="/#ai">Agentic AI</Link></li>
+            <li><a href="https://app.aulteuslogic.com/login" target="_blank" rel="noopener noreferrer">Login</a></li>
+          </ul>
+        </div>
+
+        {/* Published column */}
+        <div>
+          <div className="footer-col-h">Published</div>
+          <ul className="footer-links" role="list">
             <li>
-              <Link href="/#framework" className="hover:text-black transition-colors">
-                Aulteus Logic Framework
-              </Link>
+              <a href="https://businessday.ng/life/article/aulteus-logic-the-market-doesnt-care-what-you-think-about/" target="_blank" rel="noopener noreferrer">
+                BusinessDay
+              </a>
             </li>
             <li>
-              <Link href="/#access" className="hover:text-black transition-colors">
-                The Aulteus Logic Complete Mentorship
-              </Link>
-            </li>
-            <li>
-              <Link href="/#access" className="hover:text-black transition-colors">
-                War Room Access
-              </Link>
+              <a href="https://www.brainzmagazine.com/post/5-forex-and-stock-market-trading-secrets-you-need-to-know-to-succeed-as-a-trader" target="_blank" rel="noopener noreferrer">
+                Brainz Magazine
+              </a>
             </li>
           </ul>
         </div>
+
+        {/* Legal column */}
         <div>
-          <h4 className="font-bold mb-4 aureus-gold">Legal</h4>
-          <ul className="space-y-2 text-gray-800">
-            <li>
-              <a href="/privacy-policy" className="hover:text-black transition-colors">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="/terms-of-service" className="hover:text-black transition-colors">
-                Terms of Service
-              </a>
-            </li>
-            <li>
-              <a href="/risk-disclosure" className="hover:text-black transition-colors">
-                Risk Disclosure
-              </a>
-            </li>
+          <div className="footer-col-h">Legal</div>
+          <ul className="footer-links" role="list">
+            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link href="/terms-of-service">Terms of Service</Link></li>
+            <li><Link href="/risk-disclosure">Risk Disclosure</Link></li>
+            <li><a href="mailto:Hello@aulteuslogic.com">Hello@aulteuslogic.com</a></li>
           </ul>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
-        &copy; {currentYear} Aulteus Logic. All Rights Reserved. Aulteus Logic is
-        a decision support tool, not financial advice.
+
+      <div className="footer-bottom">
+        <span className="footer-copy">&copy; {year} Aulteus Logic. All Rights Reserved.</span>
+        <span className="footer-copy">Decision support only. Not financial advice.</span>
       </div>
     </footer>
   );

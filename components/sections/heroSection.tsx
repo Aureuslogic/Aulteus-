@@ -1,68 +1,106 @@
 'use client';
 
-import { ShieldCheck } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+
+const RADIUS = 110;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+const TOTAL = 20;
 
 export default function HeroSection() {
-  const scrollToAccess = () => {
-    const element = document.getElementById('access');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const [count, setCount] = useState(TOTAL);
+  const [active, setActive] = useState(true);
+  const progressRef = useRef<SVGCircleElement>(null);
+
+  useEffect(() => {
+    if (progressRef.current) {
+      progressRef.current.style.strokeDasharray = String(CIRCUMFERENCE);
+      progressRef.current.style.strokeDashoffset = '0';
     }
+
+    const id = setInterval(() => {
+      setCount((prev) => {
+        const next = prev <= 1 ? TOTAL : prev - 1;
+        setActive(next !== TOTAL);
+        if (progressRef.current) {
+          const offset = CIRCUMFERENCE - (next / TOTAL) * CIRCUMFERENCE;
+          progressRef.current.style.strokeDashoffset = String(offset);
+        }
+        return next;
+      });
+    }, 1000);
+
+    return () => clearInterval(id);
+  }, []);
+
+  const scrollTo = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <header className="relative pt-12 pb-20 px-6 md:px-12 max-w-5xl mx-auto text-center">
-       {/* <a
-        href='/online-launch'
-        className="inline-block gold-gradient text-white px-8 py-4 rounded font-medium tracking-wide shadow-md hover:shadow-xl hover:scale-105 transition-all transform duration-300 uppercase text-xl"
-      >
-       Online Launch
-      </a> */}
-      <br />
-      <br />
-      <div className="inline-block mb-6 px-3 py-1 border border-aureus-gold rounded-full text-xs font-bold tracking-widest text-aureus-gold uppercase">
-        Institutional Grade Decision Framework
-      </div>
-
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-8 text-aureus-dark">
-        Stop Guessing. <br /> Start Trading with{' '}
-        <br />
-        <span className="text-gold-gradient">Institutional Precision.</span>
-      </h1>
-
-      <p className="text-lg md:text-xl text-aureus-dark mb-10 font-light max-w-4xl mx-auto leading-relaxed">
-        The retail market is designed to make you fail. We teach you{' '}
-        <span className="font-serif font-bold italic text-aureus-dark highlight-underline">
-          Aulteus Logic
-        </span>
-        , the exact decision framework used by the top 1% to govern Forex, Gold,
-        Oil and Indices.
-      </p>
-      {/* Featured Snippet Block */}
-      <div className="bg-white border-l-4 border-aureus-gold shadow-lg p-6 md:p-8 text-left max-w-3xl mx-auto rounded-r-lg mb-12">
-        <div className="flex items-start gap-4">
-          <ShieldCheck className="w-6 h-6 text-aureus-gold shrink-0 mt-1" />
-          <div>
-            <h3 className="font-serif font-bold text-lg mb-2">
-              What is Aulteus Logic?
-            </h3>
-            <p className="text-aureus-dark leading-relaxed">
-              Aulteus Logic is a non linear decision asset framework expressed
-              through Agentic AI. It helps traders decide whether to act, remain
-              neutral, or wait during uncertain market conditions. It does not
-              place trades, is not a trading platform, and can be used alongside
-              any trading platform worldwide.
-            </p>
+    <section className="hero" aria-label="Aulteus Logic — institutional decision framework">
+      <div className="hero-bg-lines" aria-hidden="true" />
+      <div className="hero-inner">
+        {/* Left: copy — stagger in on mount */}
+        <div>
+          <p className="hero-eyebrow hero-anim hero-anim-d1">Non Linear Decision Intelligence</p>
+          <h1 className="hero-headline hero-anim hero-anim-d2">
+            The market decides<br />
+            in <em>20 seconds.</em><br />
+            Are you ready?
+          </h1>
+          <p className="hero-sub hero-anim hero-anim-d3">
+            Aulteus Logic is the institutional decision framework that governs
+            whether you act, stay neutral, or wait — in Forex, Gold, Oil and Indices.
+          </p>
+          <div className="hero-actions hero-anim hero-anim-d4">
+            <a href="#access" className="btn-gold" onClick={scrollTo('access')}>
+              Secure Access
+            </a>
+            <a href="#framework" className="btn-outline" onClick={scrollTo('framework')}>
+              View Framework
+            </a>
+          </div>
+          <div className="hero-partner hero-anim hero-anim-d5">
+            <span className="partner-label">Official Trading Partner</span>
+            <span className="partner-dot" aria-hidden="true" />
+            <span className="partner-name">Trade Nation</span>
           </div>
         </div>
-      </div>
 
-      {/* <a
-        href='/online-launch'
-        className="inline-block gold-gradient text-white px-8 py-4 rounded font-medium tracking-wide shadow-md hover:shadow-xl hover:scale-105 transition-all transform duration-300 uppercase text-xl"
-      >
-       Online Launch
-      </a> */}
-    </header>
+        {/* Right: animated decision-window clock */}
+        <div className="clock-wrapper hero-anim hero-anim-d3" aria-hidden="true">
+          <div className="clock-container">
+            <svg className="clock-svg" viewBox="0 0 260 260">
+              <circle className="clock-ring-outer" cx="130" cy="130" r="126" />
+              <circle className="clock-track" cx="130" cy="130" r={RADIUS} />
+              <circle
+                ref={progressRef}
+                className="clock-progress"
+                cx="130"
+                cy="130"
+                r={RADIUS}
+                style={{
+                  strokeDasharray: CIRCUMFERENCE,
+                  strokeDashoffset: 0,
+                  transition: 'stroke-dashoffset 0.9s linear',
+                }}
+              />
+            </svg>
+            <div className="clock-inner">
+              <span className="clock-number">{String(count).padStart(2, '0')}</span>
+              <span className="clock-unit">seconds</span>
+              <span className={`clock-state${active ? ' visible' : ''}`}>
+                {active ? '● ACTIVE' : '○ RESET'}
+              </span>
+            </div>
+          </div>
+          <p className="clock-caption">Decision Window</p>
+          <p className="clock-sub">
+            The window between signal and execution. Most traders miss it.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }

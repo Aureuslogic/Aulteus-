@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/layout/navigation";
@@ -8,6 +8,7 @@ import {
   organizationSchema,
   personSchema,
   websiteSchema,
+  educationalOrganizationSchema,
 } from "@/lib/schema";
 
 const inter = Inter({
@@ -19,8 +20,14 @@ const inter = Inter({
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "900"],
   style: ["normal", "italic"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "600"],
 });
 
 const SITE_URL = "https://aulteuslogic.com";
@@ -66,8 +73,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased selection:bg-aureus-gold selection:text-white">
+    <html lang="en" className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}>
+      <body className="font-sans antialiased">
         {/* Vapi Widget Script */}
         <Script
           src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
@@ -86,6 +93,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalOrganizationSchema) }}
         />
         <Navigation />
 

@@ -39,7 +39,48 @@ export const organizationSchema = {
     "@type": "Person",
     name: "Sam Onigbanjo",
   },
-  // TODO: add real profile URLs once available (LinkedIn, YouTube, X) to strengthen the entity signal
+  areaServed: "Worldwide",
+  sameAs: [
+    "https://businessday.ng/life/article/aulteus-logic-the-market-doesnt-care-what-you-think-about/",
+    "https://www.brainzmagazine.com/post/5-forex-and-stock-market-trading-secrets-you-need-to-know-to-succeed-as-a-trader",
+  ],
+};
+
+export const educationalOrganizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "Aulteus Logic",
+  url: BASE_URL,
+  description:
+    "Aulteus Logic delivers structured trading education through its five-layer decision framework and Agentic AI tools. We teach traders how to govern decisions under market uncertainty using institutional-grade methodology.",
+  email: "Hello@aulteuslogic.com",
+  areaServed: "Worldwide",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Aulteus Logic Programmes",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Course",
+          name: "Aulteus Logic Framework",
+          description:
+            "The five-layer institutional decision framework: Macro Context, Liquidity Engineering, Gap Analysis, Technical Precision, Emotional Intelligence.",
+          provider: { "@type": "Organization", name: "Aulteus Logic" },
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Course",
+          name: "The Aulteus Logic Complete Mentorship",
+          description:
+            "Full mentorship programme including the framework, Agentic AI tools, live sessions, and ongoing decision governance support.",
+          provider: { "@type": "Organization", name: "Aulteus Logic" },
+        },
+      },
+    ],
+  },
 };
 
 export const personSchema = {

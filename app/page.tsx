@@ -1,12 +1,15 @@
-import Breadcrumbs from "@/components/layout/bedcrumbs";
-import AccessSection from "@/components/sections/accessSection";
-import AuthorSection from "@/components/sections/authorSection";
-import FAQSection from "@/components/sections/faqSection";
 import HeroSection from "@/components/sections/heroSection";
-import HiddenTruthSection from "@/components/sections/hiddenTruthSection";
-import IntroductionSection from "@/components/sections/introductionSection";
-import LogicEngineSection from "@/components/sections/logicSection";
-import PhilosophySection from "@/components/sections/philosophySection";
+import StatsBar from "@/components/sections/statsBar";
+import FrameworkSection from "@/components/sections/frameworkSection";
+import AccessSection from "@/components/sections/accessSection";
+import AiSection from "@/components/sections/aiSection";
+import TestimonialsSection from "@/components/sections/testimonialsSection";
+import PartnerSection from "@/components/sections/partnerSection";
+import ArticlesSection from "@/components/sections/articlesSection";
+import AboutSection from "@/components/sections/aboutSection";
+import CtaSection from "@/components/sections/ctaSection";
+import FAQSection from "@/components/sections/faqSection";
+import DisclaimerSection from "@/components/sections/disclaimerSection";
 import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 export default function Home() {
@@ -20,16 +23,18 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
       />
-      <Breadcrumbs />
       <HeroSection />
-      <PhilosophySection />
+      <StatsBar />
+      <FrameworkSection />
       <AccessSection />
-      <HiddenTruthSection />
-      <IntroductionSection />
-      <LogicEngineSection />
-      <AuthorSection />
-      <AccessSection />
+      <AiSection />
+      <TestimonialsSection />
+      <PartnerSection />
+      <ArticlesSection />
+      <AboutSection />
+      <CtaSection />
       <FAQSection />
+      <DisclaimerSection />
     </>
   );
 }

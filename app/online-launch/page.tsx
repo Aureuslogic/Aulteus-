@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Online Launch — Aulteus Logic',
+  robots: { index: false, follow: false },
+};
+
 export default function AureusLogicLaunch() {
   return (
     <div className="min-h-screen bg-white text-zinc-900">

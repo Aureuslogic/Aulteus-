@@ -37,7 +37,7 @@ export default function Navigation() {
         <li><button onClick={() => scrollTo('results')} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--white-dim)', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', transition: 'color 0.2s', fontFamily: 'inherit' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--white-dim)')}>Results</button></li>
         <li><button onClick={() => scrollTo('inventor')} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--white-dim)', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', transition: 'color 0.2s', fontFamily: 'inherit' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--white-dim)')}>Inventor</button></li>
         <li>
-          <a href="https://app.aulteuslogic.com/login" target="_blank" rel="noopener noreferrer" className="nav-login" style={{ color: 'var(--white-dim)', border: '1px solid var(--border-dim)', padding: '0.4rem 1rem', borderRadius: '4px', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }}>Login</a>
+          <a href="https://aureus-logic.vercel.app/login" target="_blank" rel="noopener noreferrer" className="nav-login" style={{ color: 'var(--white-dim)', border: '1px solid var(--border-dim)', padding: '0.4rem 1rem', borderRadius: '4px', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }}>Login</a>
         </li>
         <li>
           <button onClick={() => scrollTo('access')} className="nav-cta" style={{ background: 'var(--gold)', color: 'var(--black)', padding: '0.45rem 1.2rem', borderRadius: '4px', fontWeight: 600, letterSpacing: '0.04em', border: 'none', cursor: 'pointer', fontSize: '0.88rem', fontFamily: 'inherit', transition: 'background 0.2s' }} onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-bright)')} onMouseLeave={e => (e.currentTarget.style.background = 'var(--gold)')}>Secure Access</button>
@@ -67,7 +67,7 @@ export default function Navigation() {
               {id === 'ai' ? 'Agentic AI' : id.charAt(0).toUpperCase() + id.slice(1)}
             </button>
           ))}
-          <a href="https://app.aulteuslogic.com/login" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontSize: '0.85rem', fontWeight: 600, textDecoration: 'none', padding: '0.4rem 0' }}>Login →</a>
+          <a href="https://aureus-logic.vercel.app/login" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontSize: '0.85rem', fontWeight: 600, textDecoration: 'none', padding: '0.4rem 0' }}>Login →</a>
         </div>
       )}
 

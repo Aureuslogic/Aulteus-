@@ -22,7 +22,7 @@ export default function Footer() {
             <li><Link href="/#framework">The Aulteus Logic Framework</Link></li>
             <li><Link href="/#access">The Aulteus Logic Complete Mentorship</Link></li>
             <li><Link href="/#ai">Agentic AI</Link></li>
-            <li><a href="https://app.aulteuslogic.com/login" target="_blank" rel="noopener noreferrer">Login</a></li>
+            <li><a href="https://aureus-logic.vercel.app/login" target="_blank" rel="noopener noreferrer">Login</a></li>
           </ul>
         </div>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import VapiWidget from "@/components/VapiWidget";
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
 import {
@@ -102,6 +103,7 @@ export default function RootLayout({
 
         <main>{children}</main>
         <Footer />
+        <VapiWidget />
 
         {/* Vapi Widget */}
         <vapi-widget

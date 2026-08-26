@@ -14,6 +14,10 @@ export default function Navigation() {
   }, []);
 
   const scrollTo = (id: string) => {
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${id}`;
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setOpen(false);
   };
@@ -32,6 +36,7 @@ export default function Navigation() {
 
       {/* Desktop links */}
       <ul className="nav-links" role="list">
+        <li><Link href="/eit">EIT</Link></li>
         <li><button onClick={() => scrollTo('framework')} className="nav-links a" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--white-dim)', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', transition: 'color 0.2s', fontFamily: 'inherit' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--white-dim)')}>Framework</button></li>
         <li><button onClick={() => scrollTo('ai')} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--white-dim)', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', transition: 'color 0.2s', fontFamily: 'inherit' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--white-dim)')}>Agentic AI</button></li>
         <li><button onClick={() => scrollTo('results')} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--white-dim)', fontSize: '0.82rem', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', transition: 'color 0.2s', fontFamily: 'inherit' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--white-dim)')}>Results</button></li>
@@ -62,6 +67,9 @@ export default function Navigation() {
       {/* Mobile menu */}
       {open && (
         <div style={{ position: 'fixed', top: '64px', left: 0, right: 0, background: 'rgba(8,8,16,0.98)', borderBottom: '1px solid var(--border-dim)', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.2rem', zIndex: 99 }}>
+          <Link href="/eit" style={{ color: 'var(--white-dim)', fontSize: '0.85rem', fontWeight: 400, letterSpacing: '0.08em', textTransform: 'uppercase', textDecoration: 'none', padding: '0.4rem 0' }} onClick={() => setOpen(false)}>
+            EIT
+          </Link>
           {['framework', 'ai', 'results', 'inventor', 'access'].map((id) => (
             <button key={id} onClick={() => scrollTo(id)} style={{ background: 'none', border: 'none', textAlign: 'left', color: 'var(--white-dim)', fontSize: '0.85rem', fontWeight: 400, letterSpacing: '0.08em', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'inherit', padding: '0.4rem 0' }}>
               {id === 'ai' ? 'Agentic AI' : id.charAt(0).toUpperCase() + id.slice(1)}

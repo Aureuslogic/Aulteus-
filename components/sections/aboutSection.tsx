@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useInView } from '@/hooks/useInView';
 
 const CREDENTIALS = [
@@ -25,7 +26,15 @@ export default function AboutSection() {
           {/* Left: bio */}
           <div className={`sr-left${inView ? ' visible' : ''}`}>
             <p className="eyebrow">The Inventor</p>
-            <div className="about-avatar" aria-hidden="true">SO</div>
+            <div className="about-avatar" style={{ overflow: 'hidden', padding: 0 }}>
+              <Image
+                src="/assets/author.jpg"
+                alt="Sam Onigbanjo, Inventor of Aulteus Logic"
+                width={80}
+                height={80}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
             <h2 className="section-h" id="about-heading">Sam Onigbanjo</h2>
             <p className="section-p">
               After years in corporate strategy and capital markets, Sam Onigbanjo

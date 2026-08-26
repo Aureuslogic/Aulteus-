@@ -34,7 +34,7 @@ const POINTS = [
   },
   {
     title: 'Works on any platform',
-    body: 'Use it alongside MT4, MT5, TradingView, or Trade Nation. Aulteus Logic governs the decision — your platform executes it.',
+    body: 'Use it alongside MT4, MT5, TradingView, or eToro. Aulteus Logic governs the decision — your broker executes it.',
   },
 ];
 

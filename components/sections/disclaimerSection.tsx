@@ -6,7 +6,7 @@ export default function DisclaimerSection() {
         You can lose more than your initial deposit. Aulteus Logic is a decision support and educational framework — it does not
         constitute financial advice, investment advice, or a recommendation to trade any specific instrument.
         Past results shared by members are not indicative of future performance. Always seek independent financial advice before trading.
-        Aulteus Logic Ltd is not regulated by the FCA or any other financial authority. Trade Nation is an independent regulated entity.
+        Aulteus Logic Ltd is not regulated by the FCA or any other financial authority. eToro (UK) Ltd is a separate, independent entity authorised and regulated by the Financial Conduct Authority.
       </p>
     </div>
   );

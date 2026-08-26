@@ -7,7 +7,10 @@ export default function CtaSection() {
   };
 
   return (
-    <section className="cta-section" aria-labelledby="cta-heading">
+    <section className="cta-section" id="join" aria-labelledby="cta-heading">
+      <div style={{ textAlign: 'center' }}>
+        <span className="live-badge"><i /> The War Room is live daily</span>
+      </div>
       <p className="eyebrow" style={{ textAlign: 'center' }}>The Decision Is Yours</p>
       <h2
         className="section-h"

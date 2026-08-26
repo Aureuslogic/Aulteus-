@@ -15,37 +15,35 @@ export default function PartnerSection() {
         <div className="partner-inner">
           {/* Left: copy */}
           <div className={`sr-left${inView ? ' visible' : ''}`}>
-            <p className="eyebrow">Official Trading Partner</p>
+            <p className="eyebrow">Partner</p>
             <h2 className="section-h" id="partner-heading">
-              Execute with an institution-grade broker
+              Execute with a regulated broker
             </h2>
             <p className="section-p">
-              Aulteus Logic has partnered with Trade Nation to give members
-              access to a regulated, low-cost trading environment. The framework
-              governs your decisions. Trade Nation is where you execute them.
-            </p>
-            <p className="section-p" style={{ marginTop: '1rem' }}>
-              Trade Nation is regulated by the FCA (UK), FSCA (South Africa),
-              SCB (Bahamas), ASIC (Australia), and FSA (Seychelles).
+              Aulteus Logic does not execute trades or hold client funds. The framework
+              governs your decisions — members execute them through their own regulated
+              broker, including eToro.
             </p>
           </div>
 
           {/* Right: partner card */}
           <div className={`partner-block sr-right${inView ? ' visible' : ''}`}>
-            <div className="partner-logo">Trade Nation</div>
-            <div className="partner-official-tag">Official Aulteus Logic Partner</div>
+            <div className="partner-logo">eToro</div>
+            <div className="partner-official-tag">Partner</div>
             <p className="partner-desc">
-              Tight spreads. No dealing desk. Regulated globally.
-              Open a free account and trade alongside Aulteus Logic members worldwide.
+              eToro (UK) Ltd is authorised and regulated by the Financial Conduct
+              Authority, FRN 583263. Open a free account and trade alongside Aulteus
+              Logic members worldwide.
             </p>
+            {/* Affiliate tracking link, eToro Partners account A93487 */}
             <a
-              href="https://tradenation.com"
+              href="https://med.etoro.com/B12087_A93487_TClick.aspx"
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="noopener sponsored nofollow"
               className="btn-gold"
               style={{ display: 'inline-block' }}
             >
-              Open a Free Account
+              Open an Account with eToro
             </a>
           </div>
         </div>

@@ -120,6 +120,58 @@ export const breadcrumbSchema = {
   ],
 };
 
+export const eitBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/` },
+    { "@type": "ListItem", position: 2, name: "The EIT Framework", item: `${BASE_URL}/eit` },
+  ],
+};
+
+export const eitDefinedTermSchema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: "EIT (Emotionally Intelligent Trader)",
+  description:
+    "A behaviour framework of six protocols run by a trader every trading day, beginning with the Traffic Light pre-trade check, designed to govern conduct rather than predict price.",
+  inDefinedTermSet: {
+    "@type": "DefinedTermSet",
+    name: "Aulteus Logic EIT Framework",
+  },
+};
+
+export const eitFaqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the EIT Traffic Light Check?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Traffic Light Check is Protocol 01 of the EIT framework and the only protocol published publicly. It sorts a potential trade into a Green, Amber or Red state before any capital is at risk. Red means no trade at all.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How many EIT protocols are there?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Six. The first, the Traffic Light System, is public. The remaining five are taught to members inside the Aulteus Logic mentorship.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why do most trading accounts fail?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Bad trading habits rather than bad analysis destroy most trading accounts. Revenge trading after a loss, overtrading after a win, FOMO entries, oversized positions and moved stop losses are behaviour problems, which is what the EIT framework was built to govern.",
+      },
+    },
+  ],
+};
+
 function answerText(answer: FAQ["answer"]): string {
   return Array.isArray(answer) ? answer.join(" ") : answer;
 }

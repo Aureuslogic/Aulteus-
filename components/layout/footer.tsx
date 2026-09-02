@@ -30,6 +30,7 @@ export default function Footer() {
         <div>
           <div className="footer-col-h">Product</div>
           <ul className="footer-links" role="list">
+            <li><Link href="/challenge">The 30 Day Trading Challenge</Link></li>
             <li><Link href="/#access">The Aulteus Logic Complete Mentorship</Link></li>
             <li><Link href="/#ai">Agentic AI</Link></li>
             <li><a href="https://aureus-logic.vercel.app/login" target="_blank" rel="noopener noreferrer">Login</a></li>

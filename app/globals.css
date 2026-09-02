@@ -97,6 +97,32 @@ body {
 }
 .nav-cta:hover { background: var(--gold-bright) !important; }
 
+/* ── HOMEPAGE PROMO BAR (links to /challenge) ── */
+.promo-bar {
+  margin-top: 74px; /* clears the fixed site nav */
+  background: linear-gradient(90deg, var(--black-mid), var(--black-lift));
+  border-bottom: 1px solid var(--border);
+  padding: 0.7rem 1.5rem;
+  text-align: center;
+}
+.promo-bar-link {
+  display: inline-flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; justify-content: center;
+  color: var(--white); text-decoration: none; font-size: 0.85rem; font-weight: 500;
+}
+.promo-bar-link:hover { color: var(--gold); }
+.promo-bar-badge {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-family: var(--font-m); font-size: 0.62rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold);
+}
+.promo-bar-badge i {
+  width: 5px; height: 5px; border-radius: 50%; background: var(--gold); font-style: normal;
+  animation: pulseLive 2.2s ease-in-out infinite;
+}
+.promo-bar-arrow { color: var(--gold); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .promo-bar-badge i { animation: none; } }
+@media (max-width: 640px) { .promo-bar { padding: 0.6rem 1rem; } .promo-bar-link { font-size: 0.78rem; } }
+
 /* ── HERO ── */
 .hero {
   min-height: 100vh;

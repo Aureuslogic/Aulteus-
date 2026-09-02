@@ -103,7 +103,7 @@ export default function HeroSection() {
             <a href="#access" className="btn-gold" onClick={scrollTo('access')}>
               Secure Access
             </a>
-            <a href="/eit" className="btn-outline">
+            <a href="/challenge" className="btn-outline">
               Start with EIT
             </a>
           </div>

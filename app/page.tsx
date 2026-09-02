@@ -1,3 +1,4 @@
+import ChallengePromoBar from "@/components/sections/challengePromoBar";
 import HeroSection from "@/components/sections/heroSection";
 import StatsBar from "@/components/sections/statsBar";
 import EitJourneySection from "@/components/sections/eitJourneySection";
@@ -29,6 +30,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
       />
+      <ChallengePromoBar />
       <HeroSection />
       <StatsBar />
       <EitJourneySection />

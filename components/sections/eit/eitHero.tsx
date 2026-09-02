@@ -16,12 +16,7 @@ export default function EitHero() {
           something you have to find on your own.
         </p>
         <div className="hero-actions hero-anim hero-anim-d4">
-          <a
-            href="https://aureus-logic.vercel.app/app?plan=mentorship"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold"
-          >
+          <a href="/challenge" className="btn-gold">
             Start your EIT journey
           </a>
           <a href="#protocols" className="btn-outline">

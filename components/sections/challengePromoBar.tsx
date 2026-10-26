@@ -7,7 +7,7 @@ export default function ChallengePromoBar() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span>Free Downloading Trading Guide</span>
+        <span>Free Download Trading Guide</span>
         <span className="promo-bar-arrow">Download →</span>
       </a>
     </div>

@@ -6,6 +6,8 @@ const RADIUS = 110;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 const TOTAL = 20;
 
+const round = (n: number) => Number(n.toFixed(4));
+
 const TICKS = Array.from({ length: 12 }, (_, i) => {
   const angle = (i / 12) * Math.PI * 2;
   const major = i % 3 === 0;
@@ -14,10 +16,10 @@ const TICKS = Array.from({ length: 12 }, (_, i) => {
   return {
     key: i,
     major,
-    x1: 130 + outer * Math.cos(angle),
-    y1: 130 + outer * Math.sin(angle),
-    x2: 130 + inner * Math.cos(angle),
-    y2: 130 + inner * Math.sin(angle),
+    x1: round(130 + outer * Math.cos(angle)),
+    y1: round(130 + outer * Math.sin(angle)),
+    x2: round(130 + inner * Math.cos(angle)),
+    y2: round(130 + inner * Math.sin(angle)),
   };
 });
 

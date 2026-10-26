@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import VapiWidget from "@/components/VapiWidget";
 import Navigation from "@/components/layout/navigation";
@@ -76,11 +75,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans antialiased">
-        {/* Vapi Widget Script */}
-        <Script
-          src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
-          strategy="afterInteractive"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -104,17 +98,6 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <VapiWidget />
-
-        {/* Vapi Widget */}
-        <vapi-widget
-          public-key={process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY}
-          assistant-id={process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID}
-          mode="voice"
-          main-label="Talk to Aulteus Agent"
-          theme="light"
-          accent-color="#c5a059"
-          empty-voice-message="Click to start a voice conversation"
-        ></vapi-widget>
       </body>
     </html>
   );
